@@ -80,7 +80,7 @@ FROM arm64v8/debian:bookworm-slim as build_stage
 LABEL maintainer="github@snry.me"
 ARG PUID=1000
 
-ENV USER steam
+ENV USER container
 ENV HOMEDIR "/home/${USER}"
 ENV STEAMCMDDIR "${HOMEDIR}/steamcmd"
 
